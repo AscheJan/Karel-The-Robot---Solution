@@ -1,0 +1,36 @@
+void mowTheLawn()
+{
+    repeat(2){
+        Anweisung1();
+        Anweisung2();
+    }
+    Anweisung1();
+    repeat(6){
+        moveForward();
+        pickBeeper();
+    }
+    moveForward();
+}
+
+
+void Anweisung1(){
+    repeat(6){
+        moveForward();
+        pickBeeper();
+    }
+    moveForward();
+    turnLeft();
+    moveForward();
+    turnLeft();
+}
+
+void Anweisung2(){
+    repeat(6){
+        moveForward();
+        pickBeeper();
+    }
+    moveForward();
+    turnRight();
+    moveForward();
+    turnRight();
+}

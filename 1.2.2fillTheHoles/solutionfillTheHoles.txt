@@ -1,0 +1,17 @@
+void fillTheHoles()
+{
+    repeat(4){
+        Anweisung();
+    }
+}
+
+void Anweisung(){
+    moveForward();
+    turnRight();
+    moveForward();
+    dropBeeper();
+    turnAround();
+    moveForward();
+    turnRight();
+    moveForward();
+}

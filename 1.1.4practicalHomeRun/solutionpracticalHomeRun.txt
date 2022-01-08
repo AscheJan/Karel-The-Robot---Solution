@@ -1,0 +1,15 @@
+void practiceHomeRun()
+{
+    repeat(4){
+        Anweisung();
+    }
+    
+}
+
+void Anweisung(){
+    repeat(9){
+        moveForward();
+    }
+    pickBeeper();
+    turnLeft();
+}

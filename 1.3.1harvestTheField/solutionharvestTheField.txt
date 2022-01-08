@@ -1,0 +1,53 @@
+void harvestTheField()
+{
+    repeat(4){
+        Anweisung1();
+        
+    }
+    Verbindung1();
+    repeat(4){
+        Anweisung2();
+        
+    }
+    Verbindung2();
+    repeat(4){
+        Anweisung1();
+        
+    }
+    Verbindung1();
+    repeat(4){
+        Anweisung2();
+        
+    }
+}
+
+void Anweisung1(){
+    moveForward();
+    pickBeeper();
+    turnRight();
+    moveForward();
+    turnLeft();
+    
+    
+}
+
+void Anweisung2(){
+    moveForward();
+    pickBeeper();
+    turnRight();
+    moveForward();
+    turnLeft();
+    
+}
+
+void Verbindung1(){
+    moveForward();
+    moveForward();
+    turnLeft();
+    moveForward();
+    moveForward();
+    turnLeft();
+}
+void Verbindung2(){
+    turnAround();
+}

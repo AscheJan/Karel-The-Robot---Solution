@@ -1,0 +1,15 @@
+void climbTheStairs()
+{
+    moveForward();
+    repeat(6){
+        Anweisung();
+    }
+    
+}
+
+void Anweisung(){
+    turnLeft();
+    moveForward();
+    turnRight();
+    moveForward();
+}
