@@ -1,0 +1,27 @@
+void tileTheFloor()
+{
+    dropBeeper();
+    repeat(118){
+        Anweisung1();
+    }
+}
+
+void Anweisung1(){
+    if (beeperAhead() && onBeeper()){
+        turnLeft();
+        moveForward();  
+    }else if (beeperAhead()){
+        turnLeft();
+    }else if (!onBeeper()){
+        
+        dropBeeper();
+    }else if (frontIsClear()){
+        moveForward();
+        dropBeeper();
+    }else if (onBeeper() && beeperAhead()){
+        turnLeft();
+        moveForward();
+    }else if (!frontIsClear()){
+        turnLeft(); 
+    }
+}

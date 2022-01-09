@@ -1,0 +1,22 @@
+void removeTheTiles()
+{
+    
+    repeat(218){
+        Anweisung1();
+    }
+    
+}
+
+void Anweisung1(){
+    if (onBeeper()){
+        pickBeeper();
+        
+    }else if (beeperAhead()){
+        moveForward();
+        
+    }else if (!frontIsClear()){
+        turnLeft();
+    }else if (frontIsClear()){
+        turnLeft();
+    }
+}
