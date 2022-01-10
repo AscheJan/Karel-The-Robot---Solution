@@ -1,0 +1,37 @@
+void hangTheLampions()
+{
+    repeat(10){
+        Anweisung1();
+        Anweisung2();
+        Anweisung3();
+        Anweisung4();
+    } 
+}
+void Anweisung4(){
+    while(frontIsClear()){
+       moveForward();
+    }
+    turnLeft();
+}
+
+void Anweisung3(){
+    dropBeeper();
+    turnAround();
+}
+
+void Anweisung2(){
+    while(frontIsClear()){
+        moveForward();
+    }
+}
+
+void Anweisung1(){
+    if(onBeeper()){
+        turnLeft();
+        pickBeeper();    
+    }else if (beeperAhead()){
+        moveForward();
+        turnLeft();
+        pickBeeper();
+    } 
+}

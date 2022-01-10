@@ -1,0 +1,15 @@
+void followTheSeeds()
+{
+    repeat(66){
+        Anweisung1();  
+    }
+}
+
+void Anweisung1(){
+    if(beeperAhead()){
+        moveForward();
+        pickBeeper();
+    }else if (!beeperAhead()){
+        turnLeft();   
+    } 
+}

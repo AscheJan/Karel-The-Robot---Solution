@@ -1,0 +1,17 @@
+void walkTheLabyrinth()
+{
+    repeat(160){
+        Anweisung1();
+    }
+    
+}
+
+void Anweisung1(){
+    if (frontIsClear()){
+        moveForward();
+    }else if (rightIsClear()){
+        turnRight();
+    }else if (leftIsClear()){
+        turnLeft();
+    }
+}
